@@ -1195,7 +1195,7 @@ function showRuinedAssetslides(n) {
   let slides = document.getElementsByClassName("Sunsetassetslide");
   let dots = document.getElementsByClassName("Sunsetdemo");
   let captionText = document.getElementById("Sunsetcaption");
-  if (n > slides.length) { = 1}
+  if (n > slides.length) {Sunsetassetslideindex = 1}
   if (n < 1) {Sunsetassetslideindex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
