@@ -35,6 +35,10 @@ body {
 .container5 {
   position: relative;
 }
+.container6{
+  position: relative;
+  
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -123,6 +127,10 @@ body {
 .Hillsunsetdemo {
   opacity: 0.6;
 }
+
+.Ruineddemo {
+  opacity: 0.6;
+}
     
 .active,
 .demo:hover {
@@ -204,6 +212,7 @@ h1 {
   <button class="btn" onclick="filterSelection('Castle scene')">Castle scene</button>
   <button class="btn" onclick="filterSelection('Disney scene')">Disney scene</button>
   <button class="btn" onclick="filterSelection('Hillsunset scene')">Hillsunset scene</button>
+  <button class="btn" onclick="filterSelection('Ruined scene')">Ruined scene</button>
 </div>
  
 <!-- Start :  PBR Assets -->
@@ -817,7 +826,95 @@ h1 {
     </div>
 </div>
 
-<!-- End :  Disney renders -->
+<!-- End :  Hill sunset -->
+  <!-- Start : Ruined landscape -->
+
+<div class="container6">
+    <div class="RuinedAssetslide">
+      <div class="numbertext">1 / 10</div>
+      <img src="Ruined/0.png" style="width:100%">
+    </div>
+ <div class="RuinedAssetslide">
+      <div class="numbertext">2/ 10</div>
+      <img src="Ruined/1.png" style="width:100%">
+    </div>
+  <div class="RuinedAssetslide">
+      <div class="numbertext">3/ 10</div>
+      <img src="Ruined/2.1.png" style="width:100%">
+    </div>
+  <div class="RuinedAssetslide">
+      <div class="numbertext">4 / 10</div>
+      <img src="Ruined/2.png" style="width:100%">
+    </div>
+  <div class="RuinedAssetslide">
+      <div class="numbertext">5/ 10</div>
+      <img src="Ruined/3.png" style="width:100%">
+    </div>
+  <div class="RuinedAssetslide">
+      <div class="numbertext">6 / 10</div>
+      <img src="Ruined/4.png" style="width:100%">
+    </div>
+  <div class="RuinedAssetslide">
+      <div class="numbertext">7/ 10</div>
+      <img src="Ruined/5.png" style="width:100%">
+    </div>
+  <div class="RuinedAssetslide">
+      <div class="numbertext">8/ 10</div>
+      <img src="Ruined/6.png" style="width:100%">
+    </div>
+  <div class="RuinedAssetslide">
+      <div class="numbertext">9/ 10</div>
+      <img src="Ruined/7.png" style="width:100%">
+    </div>
+  <div class="RuinedAssetslide">
+      <div class="numbertext">10 / 10</div>
+      <img src="Ruined/8.png" style="width:100%">
+    </div>
+      
+    <a class="prev" onclick="plusRuinedAssetslide(-1)">❮</a>
+    <a class="next" onclick="plusRuinedAssetslide(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="RuinedAssets caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/0.png" style="width:100%" onclick="currentRuinedAssetslides(1)" alt="Fire Ball">
+      </div>
+        <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/1.png" style="width:100%" onclick="currentRuinedAssetslides(2)" alt="Fire Ball">
+      </div>
+        <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/2.1.png" style="width:100%" onclick="currentRuinedAssetslides(3)" alt="Fire Ball">
+      </div>
+        <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/2.png" style="width:100%" onclick="currentRuinedAssetslides(4)" alt="Fire Ball">
+      </div>
+        <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/3.png" style="width:100%" onclick="currentRuinedAssetslides(5)" alt="Fire Ball">
+      </div>
+        <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/4.png" style="width:100%" onclick="currentRuinedAssetslides(6)" alt="Fire Ball">
+      </div>
+        <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/5.png" style="width:100%" onclick="currentRuinedAssetslides(7)" alt="Fire Ball">
+      </div>
+        <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/6.png" style="width:100%" onclick="currentRuinedAssetslides(8)" alt="Fire Ball">
+      </div>
+        <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/7.png" style="width:100%" onclick="currentRuinedAssetslides(9)" alt="Fire Ball">
+      </div>
+        <div class="column">
+        <img class="Ruineddemo cursor" src="Ruined/8.png" style="width:100%" onclick="currentRuinedAssetslides(10)" alt="Fire Ball">
+      </div>
+      
+     
+    </div>
+</div>
+
+<!-- End :  Ruined Assets -->
   
 
 
@@ -829,11 +926,13 @@ let castleslideIndex = 1;
 let naturalslideindex = 1;
 let dinseyslideindex = 1;
 let hillsunsetslideindex = 1;
+let RuinedAssetslide = 1;
 showPBRSlides(pbrslideIndex);
 showCastleSlides(castleslideIndex);
 showNaturalSlides(naturalslideindex)
 showDisneySlides(dinseyslideindex)
 showHillsunsetAssetSlides(hillsunsetslideindex)
+showRuinedAssetslide(RuinedAssetslideindex)
 
 
 function plusPBRSlides(n) {
@@ -850,6 +949,9 @@ function plusDisneySlides(n) {
 }
 function plushillsunsetSlides(n) {
   showHillsunsetAssetSlides(hillsunsetslideindex += n);
+}
+function plusRuinedAssetslide(n) {
+  showRuinedAssetslides(RuinedAssetslideindex += n);
 }
 
 
@@ -868,6 +970,9 @@ function currentDisneySlide(n) {
 }
 function currentHillsunsetSlide(n) {
   showHillsunsetAssetSlides(hillsunsetslideindex = n);
+}
+function currentRuinedAssetslide(n) {
+  showRuinedAssetslides(RuinedAssetslideindex = n);
 }
 
 
@@ -960,6 +1065,25 @@ function showDisneySlides(n) {
   dots[hillsunsetslideindex-1].className += " active";
   captionText.innerHTML = dots[hillsunsetslideindex-1].alt;
 }
+  
+     function showRuinedAssetslide(n) {
+  let i;
+  let slides = document.getElementsByClassName("RuinedAssetslide");
+  let dots = document.getElementsByClassName("Ruineddemo");
+  let captionText = document.getElementById("RuinedAssetscaption");
+  if (n > slides.length) {RuinedAssetslideindex = 1}
+  if (n < 1) {RuinedAssetslideindex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[RuinedAssetslideindex-1].style.display = "block";
+  dots[RuinedAssetslideindex-1].className += " active";
+  captionText.innerHTML = dots[RuinedAssetslideindex-1].alt;
+}
+
 
 
 
@@ -995,6 +1119,13 @@ function filterSelection(c) {
     document.getElementsByClassName("container2")[0].style.display = "none";
     document.getElementsByClassName("container4")[0].style.display = "none";
     document.getElementsByClassName("container5")[0].style.display = "block";
+  } else if (c == "Ruined Scene") 
+    document.getElementsByClassName("container1")[0].style.display = "none";
+    document.getElementsByClassName("container3")[0].style.display = "none";
+    document.getElementsByClassName("container2")[0].style.display = "none";
+    document.getElementsByClassName("container4")[0].style.display = "none";
+    document.getElementsByClassName("container5")[0].style.display = "none";
+    document.getElementsByClassName("container6")[0].style.display = "block";
   }
 }
 
