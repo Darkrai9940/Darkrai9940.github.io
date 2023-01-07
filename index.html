@@ -36,9 +36,13 @@ body {
   position: relative;
 }
 .container6{
+  position: relative;  
+}
+  .container7{
   position: relative;
   
 }
+
 
 /* Hide the images by default */
 .mySlides {
@@ -131,6 +135,9 @@ body {
 .Ruineddemo {
   opacity: 0.6;
 }
+  .Sunsetdemo {
+  opacity: 0.6;
+}
   
 .active,
 .demo:hover {
@@ -211,6 +218,7 @@ h1 {
   <button class="btn" onclick="filterSelection('Disney scene')">Disney scene</button>
   <button class="btn" onclick="filterSelection('Hillsunset scene')">Hillsunset scene</button>
   <button class="btn" onclick="filterSelection('Ruined Scene')">Ruined Scene</button>
+  <button class="btn" onclick="filterSelection('Sunset scene')">Ruined Scene</button>
 </div>
  
 <!-- Start :  PBR Assets -->
@@ -903,10 +911,108 @@ h1 {
       </div>
       
      
-    </div>
+     </div>
 </div>
 
 <!-- End :  Ruined Assets -->
+ <!-- start : Sunset Scene-->
+  
+   <div class="container7">
+    <div class="Sunsetassetslide">
+      <div class="numbertext">1 / 9</div>
+      <img src="Sunset /.1.png" style="width:100%">
+    </div>
+     
+    <div class="container7">
+    <div class="Sunsetassetslide">
+      <div class="numbertext">1 / 9</div>
+      <img src="Sunset /.2.png" style="width:100%">
+    </div>
+  
+      <div class="container7">
+    <div class="Sunsetassetslide">
+      <div class="numbertext">1 / 9</div>
+      <img src="Sunset /3.png" style="width:100%">
+    </div>
+  
+      <div class="container7">
+    <div class="Sunsetassetslide">
+      <div class="numbertext">1 / 9</div>
+      <img src="Sunset /4.png" style="width:100%">
+    </div>
+  
+      <div class="container7">
+    <div class="Sunsetassetslide">
+      <div class="numbertext">1 / 9</div>
+      <img src="Sunset /5.png" style="width:100%">
+    </div>
+  
+      <div class="container7">
+    <div class="Sunsetassetslide">
+      <div class="numbertext">1 / 9</div>
+      <img src="Sunset /6.png" style="width:100%">
+    </div>
+  
+      <div class="container7">
+    <div class="Sunsetassetslide">
+      <div class="numbertext">1 / 9</div>
+      <img src="Sunset /7.png" style="width:100%">
+    </div>
+  
+      <div class="container7">
+    <div class="Sunsetassetslide">
+      <div class="numbertext">1 / 9</div>
+      <img src="Sunset /8.png" style="width:100%">
+    </div>
+  
+      <div class="container7">
+    <div class="Sunsetassetslide">
+      <div class="numbertext">1 / 9</div>
+      <img src="Sunset /9.png" style="width:100%">
+    </div>
+     
+    <a class="prev" onclick="plusSunsetassetslide(-1)">❮</a>
+    <a class="next" onclick="plusSunsetassetslide(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="Sunsetcaption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="Sunsetdemo cursor" src="Sunset/.1.png" style="width:100%" onclick="currentSunsetassetslide(1)" alt="Terrrain 1">
+      </div>
+       <div class="column">
+        <img class="Sunsetdemo cursor" src="Sunset/.2.png" style="width:100%" onclick="currentSunsetassetslide(2)" alt="Terrrain 1">
+      </div>
+         <div class="column">
+        <img class="Sunsetdemo cursor" src="Sunset/3.png" style="width:100%" onclick="currentSunsetassetslide(3)" alt="Terrrain 1">
+      </div>
+         <div class="column">
+        <img class="Sunsetdemo cursor" src="Sunset/4.png" style="width:100%" onclick="currentSunsetassetslide(4)" alt="Terrrain 1">
+      </div>
+         <div class="column">
+        <img class="Sunsetdemo cursor" src="Sunset/5.png" style="width:100%" onclick="currentSunsetassetslide(5)" alt="Terrrain 1">
+      </div>
+         <div class="column">
+        <img class="Sunsetdemo cursor" src="Sunset/6.png" style="width:100%" onclick="currentSunsetassetslide(6)" alt="Terrrain 1">
+      </div>
+         <div class="column">
+        <img class="Sunsetdemo cursor" src="Sunset/7.png" style="width:100%" onclick="currentSunsetassetslide(7)" alt="Terrrain 1">
+      </div>
+         <div class="column">
+        <img class="Sunsetdemo cursor" src="Sunset/8.png" style="width:100%" onclick="currentSunsetassetslide(8)" alt="Terrrain 1">
+      </div>
+         <div class="column">
+        <img class="Sunsetdemo cursor" src="Sunset/9.png" style="width:100%" onclick="currentSunsetassetslide(9)" alt="Terrrain 1">
+      </div>
+
+     
+      </div>
+    </div>
+</div>
+
+<!-- End :  Hill sunset -->
   
 
 
@@ -919,12 +1025,15 @@ let naturalslideindex = 1;
 let dinseyslideindex = 1;
 let hillsunsetslideindex = 1;
 let RuinedAssetslideindex = 1;
+let Sunsetassetslide = 1;
+
 showPBRSlides(pbrslideIndex);
 showCastleSlides(castleslideIndex);
 showNaturalSlides(naturalslideindex)
 showDisneySlides(dinseyslideindex)
 showHillsunsetAssetSlides(hillsunsetslideindex)
 showRuinedAssetslides(RuinedAssetslideindex)
+showSunsetassetslide(Sunsetassetslideindex)
 
 
 function plusPBRSlides(n) {
@@ -944,6 +1053,9 @@ function plushillsunsetSlides(n) {
 }
 function plusRuinedAssetslide(n) {
   showRuinedAssetslides(RuinedAssetslideindex += n);
+}
+  function plusSunsetassetslide(n) {
+  showSunsetassetslide(Sunsetassetslideindex += n);
 }
 
 
@@ -966,7 +1078,9 @@ function currentHillsunsetSlide(n) {
 function currentRuinedAssetslide(n) {
   showRuinedAssetslides(RuinedAssetslideindex = n);
 }
-
+function currentSunsetassetslide(n) {
+  showSunsetassetslide(Sunsetassetslideindex = n);
+}
 
 
 function showPBRSlides(n) {
@@ -1075,6 +1189,24 @@ function showRuinedAssetslides(n) {
   dots[RuinedAssetslideindex-1].className += " active";
   captionText.innerHTML = dots[RuinedAssetslideindex-1].alt;
 }
+  
+  function showSunsetassetslide(n) {
+  let i;
+  let slides = document.getElementsByClassName("Sunsetassetslide");
+  let dots = document.getElementsByClassName("Sunsetdemo");
+  let captionText = document.getElementById("Sunsetcaption");
+  if (n > slides.length) { = 1}
+  if (n < 1) {Sunsetassetslideindex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[Sunsetassetslideindex-1].style.display = "block";
+  dots[Sunsetassetslideindex-1].className += " active";
+  captionText.innerHTML = dots[Sunsetassetslideindex-1].alt;
+}
 
 
 
@@ -1088,6 +1220,7 @@ function filterSelection(c) {
     document.getElementsByClassName("container1")[0].style.display = "block";
     document.getElementsByClassName("container5")[0].style.display = "none";
     document.getElementsByClassName("container6")[0].style.display = "none";
+    document.getElementsByClassName("container7")[0].style.display = "none";
   } else if (c == "Nature Assets") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container2")[0].style.display = "none";
@@ -1095,6 +1228,7 @@ function filterSelection(c) {
     document.getElementsByClassName("container4")[0].style.display = "none";
     document.getElementsByClassName("container5")[0].style.display = "none";
     document.getElementsByClassName("container6")[0].style.display = "none";
+    document.getElementsByClassName("container7")[0].style.display = "none";
   } else if (c == "Castle scene") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "none";
@@ -1102,6 +1236,7 @@ function filterSelection(c) {
     document.getElementsByClassName("container4")[0].style.display = "none";
     document.getElementsByClassName("container5")[0].style.display = "none";
     document.getElementsByClassName("container6")[0].style.display = "none";
+    document.getElementsByClassName("container7")[0].style.display = "none";
   } else if (c == "Disney scene") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "none";
@@ -1109,6 +1244,7 @@ function filterSelection(c) {
     document.getElementsByClassName("container4")[0].style.display = "block";
     document.getElementsByClassName("container5")[0].style.display = "none";
     document.getElementsByClassName("container6")[0].style.display = "none";
+    document.getElementsByClassName("container7")[0].style.display = "none";
   } else if (c == "Hillsunset scene") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "none";
@@ -1116,6 +1252,8 @@ function filterSelection(c) {
     document.getElementsByClassName("container4")[0].style.display = "none";
     document.getElementsByClassName("container5")[0].style.display = "block";
     document.getElementsByClassName("container6")[0].style.display = "none";
+    document.getElementsByClassName("container7")[0].style.display = "none";
+    
   } else if (c == "Ruined Scene") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "none";
@@ -1123,6 +1261,15 @@ function filterSelection(c) {
     document.getElementsByClassName("container4")[0].style.display = "none";
     document.getElementsByClassName("container5")[0].style.display = "none";
     document.getElementsByClassName("container6")[0].style.display = "block";
+    document.getElementsByClassName("container7")[0].style.display = "none";
+  } else if (c == "Sunset scene") {
+    document.getElementsByClassName("container1")[0].style.display = "none";
+    document.getElementsByClassName("container3")[0].style.display = "none";
+    document.getElementsByClassName("container2")[0].style.display = "none";
+    document.getElementsByClassName("container4")[0].style.display = "none";
+    document.getElementsByClassName("container5")[0].style.display = "none";
+    document.getElementsByClassName("container6")[0].style.display = "none";
+    document.getElementsByClassName("container7")[0].style.display = "block";
   }
 }
 
