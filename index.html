@@ -32,6 +32,9 @@ body {
 .container4 {
   position: relative;
 }
+.container5 {
+  position: relative;
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -117,6 +120,9 @@ body {
   opacity: 0.6;
 }
 
+  .Hillsunsetdemo {
+  opacity: 0.6;
+    
 .active,
 .demo:hover {
   opacity: 1;
@@ -196,6 +202,7 @@ h1 {
   <button class="btn" onclick="filterSelection('Nature Assets')">Nature Assets</button>
   <button class="btn" onclick="filterSelection('Castle scene')">Castle scene</button>
   <button class="btn" onclick="filterSelection('Disney scene')">Disney scene</button>
+  <button class="btn" onclick="filterSelection('Hillsunset scene')"Hillsunset scene</button>
 </div>
  
 <!-- Start :  PBR Assets -->
@@ -824,6 +831,7 @@ showPBRSlides(pbrslideIndex);
 showCastleSlides(castleslideIndex);
 showNaturalSlides(naturalslideindex)
 showDisneySlides(dinseyslideindex)
+showHillsunsetSlides(hillsunsetslideindex)
 
 
 function plusPBRSlides(n) {
@@ -837,6 +845,9 @@ function plusNaturalSlides(n) {
 }
 function plusDisneySlides(n) {
   showDisneySlides(dinseyslideindex += n);
+}
+  function plushillsunsetSlides(n) {
+  showHillsunsetslides(Hillsunsetslideindex += n);
 }
 
 
@@ -852,6 +863,9 @@ function currentNaturalSlide(n) {
 }
 function currentDisneySlide(n) {
   showDisneySlides(dinseyslideindex = n);
+}
+function currentDisneySlide(n) {
+  showHillsunset(Hillsunsetslideindex = n);
 }
 
 
@@ -927,6 +941,24 @@ function showDisneySlides(n) {
   dots[dinseyslideindex-1].className += " active";
   captionText.innerHTML = dots[dinseyslideindex-1].alt;
 }
+  function showHillsunsetAssetSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("HillsunsetAssetSlides");
+  let dots = document.getElementsByClassName("Hillsunsetdemo");
+  let captionText = document.getElementById("Hillsunsetcaption");
+  if (n > slides.length) {Hillsunsetslideindex = 1}
+  if (n < 1) {Hillsunsetslideindex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[Hillsunsetslideindex-1].style.display = "block";
+  dots[Hillsunsetslideindex-1].className += " active";
+  captionText.innerHTML = dots[Hillsunsetslideindex-1].alt;
+}
+
 
 
 filterSelection("PBR Material And Basic Modelling")
@@ -947,6 +979,12 @@ function filterSelection(c) {
     document.getElementsByClassName("container2")[0].style.display = "block";
     document.getElementsByClassName("container4")[0].style.display = "none";
   } else if (c == "Disney scene") {
+    document.getElementsByClassName("container1")[0].style.display = "none";
+    document.getElementsByClassName("container3")[0].style.display = "none";
+    document.getElementsByClassName("container2")[0].style.display = "none";
+    document.getElementsByClassName("container4")[0].style.display = "block";
+  }
+   } else if (c == "HillSunset scene") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "none";
     document.getElementsByClassName("container2")[0].style.display = "none";
