@@ -188,6 +188,7 @@ h1 {
   <button class="btn active" onclick="filterSelection('PBR Material And Basic Modelling')">PBR Material And Modelling</button>
   <button class="btn" onclick="filterSelection('Nature Assets')">Nature Assets</button>
   <button class="btn" onclick="filterSelection('Castle scene')">Castle scene</button>
+  <button class="btn" onclick="filterSelection('Disney scene')">Disney scene</button>
 </div>
  
 <!-- Start :  PBR Assets -->
@@ -595,10 +596,10 @@ h1 {
 
 <!-- Start :  Disney renders -->
 
-<div class="container3">
+<div class="container4">
     <div class="DisneyAssetSlides">
       <div class="numbertext">1 / 8</div>
-      <img src="Disney land/1" style="width:100%">
+      <img src="Disney land/1.png" style="width:100%">
     </div>
   
     <div class="DisneyAssetSlides">
@@ -643,40 +644,40 @@ h1 {
 
    
       
-    <a class="prev" onclick="plusNaturalSlides(-1)">❮</a>
-    <a class="next" onclick="plusNaturalSlides(1)">❯</a>
+    <a class="prev" onclick="plusDisneySlides(-1)">❮</a>
+    <a class="next" onclick="plusDisneySlides(1)">❯</a>
   
     <div class="caption-container">
-      <p id="naturecaption"></p>
+      <p id="disneycaption"></p>
     </div>
   
     <div class="row">
       <div class="column">
-        <img class="naturedemo cursor" src="Disney land/1.png" style="width:100%" onclick="currentNaturalSlide(1)" alt="Modelling grass variation">
+        <img class="disneydemo cursor" src="Disney land/1.png" style="width:100%" onclick="currentDisneySlide(1)" alt="Modelling grass variation">
       </div>
       <div class="column">
-        <img class="naturedemo cursor" src="Disney land/2.png" style="width:100%" onclick="currentNaturalSlide(2)" alt="Different camera view for grass">
+        <img class="disneydemo cursor" src="Disney land/2.png" style="width:100%" onclick="currentDisneySlide(2)" alt="Different camera view for grass">
       </div>
       <div class="column">
-        <img class="naturedemo cursor" src="Disney land/3.0.png" style="width:100%" onclick="currentNaturalSlide(3)" alt="Modelling green leaves with branches">
+        <img class="disneydemo cursor" src="Disney land/3.0.png" style="width:100%" onclick="currentDisneySlide(3)" alt="Modelling green leaves with branches">
       </div>
       <div class="column">
-        <img class="naturedemo cursor" src="Disney land/3.1.png" style="width:100%" onclick="currentNaturalSlide(4)" alt="Modelling Ivy climbers">
+        <img class="disneydemo cursor" src="Disney land/3.1.png" style="width:100%" onclick="currentDisneySlide(4)" alt="Modelling Ivy climbers">
       </div>
       <div class="column">
-        <img class="naturedemo cursor" src="Disney land/4.png" style="width:100%" onclick="currentNaturalSlide(5)" alt="Modelling mapple leaves">
+        <img class="disneydemo cursor" src="Disney land/4.png" style="width:100%" onclick="currentDisneySlide(5)" alt="Modelling mapple leaves">
       </div>    
       <div class="column">
-        <img class="naturedemo cursor" src="Disney land/5.png" style="width:100%" onclick="currentNaturalSlide(6)" alt="Modelling nettle plant">
+        <img class="disneydemo cursor" src="Disney land/5.png" style="width:100%" onclick="currentDisneySlide(6)" alt="Modelling nettle plant">
       </div>
       <div class="column">
-        <img class="naturedemo cursor" src="Disney land/6.png" style="width:100%" onclick="currentNaturalSlide(7)" alt="Modelling reed grass">
+        <img class="disneydemo cursor" src="Disney land/6.png" style="width:100%" onclick="currentDisneySlide(7)" alt="Modelling reed grass">
       </div>
       <div class="column">
-        <img class="naturedemo cursor" src="Disney land/7.png" style="width:100%" onclick="currentNaturalSlide(8)" alt="Modelling celandine plant">
+        <img class="disneydemo cursor" src="Disney land/7.png" style="width:100%" onclick="currentDisneySlide(8)" alt="Modelling celandine plant">
       </div>
       <div class="column">
-        <img class="naturedemo cursor" src="Disney land/8.png" style="width:100%" onclick="currentNaturalSlide(9)" alt="Modelling small plant">
+        <img class="disneydemo cursor" src="Disney land/8.png" style="width:100%" onclick="currentDisneySlide(9)" alt="Modelling small plant">
       </div>
 
      
@@ -684,7 +685,7 @@ h1 {
     </div>
 </div>
 
-<!-- End :  Natural Assets -->
+<!-- End :  Disney renders -->
 
 
 
@@ -693,10 +694,11 @@ h1 {
 let pbrslideIndex = 1;
 let castleslideIndex = 1;
 let naturalslideindex = 1;
+let dinseyslideindex = 1;
 showPBRSlides(pbrslideIndex);
 showCastleSlides(castleslideIndex);
 showNaturalSlides(naturalslideindex)
-
+showDisneySlides(dinseyslideindex)
 
 
 function plusPBRSlides(n) {
@@ -707,6 +709,9 @@ function plusCastleSlides(n) {
 }
 function plusNaturalSlides(n) {
   showNaturalSlides(naturalslideindex += n);
+}
+function plusDisneySlides(n) {
+  showDisneySlides(dinseyslideindex += n);
 }
 
 
@@ -719,6 +724,9 @@ function currentCastleSlide(n) {
 }
 function currentNaturalSlide(n) {
   showNaturalSlides(naturalslideindex = n);
+}
+function currentDisneySlide(n) {
+  showDisneySlides(dinseyslideindex = n);
 }
 
 
@@ -776,11 +784,30 @@ function showNaturalSlides(n) {
   dots[naturalslideindex-1].className += " active";
   captionText.innerHTML = dots[naturalslideindex-1].alt;
 }
+  
+function showDisneySlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("DisneyAssetSlides");
+  let dots = document.getElementsByClassName("disneydemo");
+  let captionText = document.getElementById("disneycaption");
+  if (n > slides.length) {dinseyslideindex = 1}
+  if (n < 1) {dinseyslideindex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[dinseyslideindex-1].style.display = "block";
+  dots[dinseyslideindex-1].className += " active";
+  captionText.innerHTML = dots[dinseyslideindex-1].alt;
+}
 
 
 filterSelection("PBR Material And Basic Modelling")
 function filterSelection(c) {
   if (c == "PBR Material And Basic Modelling") {
+    document.getElementsByClassName("container4")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "none";
     document.getElementsByClassName("container2")[0].style.display = "none";
     document.getElementsByClassName("container1")[0].style.display = "block";
@@ -788,10 +815,17 @@ function filterSelection(c) {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container2")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "block";
+    document.getElementsByClassName("container4")[0].style.display = "none";
   } else if (c == "Castle scene") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "none";
     document.getElementsByClassName("container2")[0].style.display = "block";
+    document.getElementsByClassName("container4")[0].style.display = "none";
+  } else if (c == "Castle scene") {
+    document.getElementsByClassName("container1")[0].style.display = "none";
+    document.getElementsByClassName("container3")[0].style.display = "none";
+    document.getElementsByClassName("container2")[0].style.display = "none";
+    document.getElementsByClassName("container4")[0].style.display = "block";
   }
 }
 
