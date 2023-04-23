@@ -29,26 +29,6 @@ body {
 }
 .container3 {
   position: relative;
-}
-.container4 {
-  position: relative;
-}
-.container5 {
-  position: relative;
-}
-.container6 {
-  position: relative;  
-}
-.container7 {
-  position: relative;
-}
-.container8 {
-  position: relative;
-}
-.container9 {
-  position: relative;
-}
-
 
 /* Hide the images by default */
 .mySlides {
@@ -119,31 +99,13 @@ body {
 }
 
 /* Add a transparency effect for thumnbail images */
-.pbrdemo {
+.environmentart {
   opacity: 0.6;
 }
-.castledemo {
+.materialfinal {
   opacity: 0.6;
 }
-.naturedemo {
-  opacity: 0.6;
-}
-.disneydemo {
-  opacity: 0.6;
-}
-.Hillsunsetdemo {
-  opacity: 0.6;
-}
-.Ruineddemo {
-  opacity: 0.6;
-}
-.Sunsetdemo {
-  opacity: 0.6;
-}
-.Waterhousedemo {
-  opacity: 0.6;
-}
-.Substancedemo {
+.props {
   opacity: 0.6;
 }
   
@@ -151,7 +113,6 @@ body {
 .demo:hover {
   opacity: 1;
 }
-
 
 
 /* Center website */
@@ -220,67 +181,56 @@ h1 {
 
 <div id="myBtnContainer" style="height:100px;">
   <!-- <button class="btn active" onclick="filterSelection('all')"> Show all</button> -->
-  <button class="btn active" onclick="filterSelection('Basics')">Basics</button>
-  <button class="btn" onclick="filterSelection('Nature Assets')">Nature Assets</button>
-  <button class="btn" onclick="filterSelection('Castle scene')">Castle scene</button>
-  <button class="btn" onclick="filterSelection('Disney scene')">Disney scene</button>
-  <button class="btn" onclick="filterSelection('Hillsunset scene')">Hillsunset scene</button>
-  <button class="btn" onclick="filterSelection('Ruined Scene')">Ruined Scene</button>
-  <button class="btn" onclick="filterSelection('Sunset scene')">Sunset scene</button>
-  <button class="btn" onclick="filterSelection('Waterhouse scene')">Waterhouse scene</button>
-  <button class="btn" onclick="filterSelection('Substance scene')">Substance scene</button>
+  <button class="btn active" onclick="filterSelection('EnvironmentArt')">Basics</button>
+  <button class="btn" onclick="filterSelection('MaterialFinal')">Nature Assets</button>
+  <button class="btn" onclick="filterSelection('Props')">Castle scene</button>
 </div>
  
-<!-- Start :  PBR Assets -->
+<!-- Start :  Environment Art -->
 
 <div class="container1">
-    <div class="PbrAssetSlides">
-      <div class="numbertext">1 / 9</div>
-      <img src="PbrAssets/balls.png" style="width:100%">
+    <div class="EnvironmentArtSlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="EnvironmentArt/1.png" style="width:100%">
     </div>
   
-    <div class="PbrAssetSlides">
-      <div class="numbertext">2 / 9</div>
-      <img src="PbrAssets/brick_ball_text.png" style="width:100%">
+    <div class="EnvironmentArt">
+      <div class="numbertext">2 / 8</div>
+      <img src="EnvironmentArt/2.png" style="width:100%">
     </div>
   
-    <div class="PbrAssetSlides">
-      <div class="numbertext">3 / 9</div>
-      <img src="PbrAssets/cgi_plane.png" style="width:100%">
+    <div class="EnvironmentArt">
+      <div class="numbertext">3 / 8</div>
+      <img src="EnvironmentArt/3.png" style="width:100%">
     </div>
       
-    <div class="PbrAssetSlides">
-      <div class="numbertext">4 / 9</div>
-      <img src="PbrAssets/chess_wallpaper.png" style="width:100%">
+    <div class="EnvironmentArt">
+      <div class="numbertext">4 / 8</div>
+      <img src="EnvironmentArt/4.png" style="width:100%">
     </div>
   
-    <div class="PbrAssetSlides">
-      <div class="numbertext">5 / 9</div>
-      <img src="PbrAssets/fireball.png" style="width:100%">
+    <div class="EnvironmentArt">
+      <div class="numbertext">5 / 8</div>
+      <img src="EnvironmentArt/5.png" style="width:100%">
     </div>
       
-    <div class="PbrAssetSlides">
-      <div class="numbertext">6 / 9</div>
-      <img src="PbrAssets/temple.png" style="width:100%">
+    <div class="EnvironmentArt">
+      <div class="numbertext">6 / 8</div>
+      <img src="EnvironmentArt/6.png" style="width:100%">
     </div>
 
-    <div class="PbrAssetSlides">
-        <div class="numbertext">7 / 9</div>
-        <img src="PbrAssets/temple2.png" style="width:100%">
+    <div class="EnvironmentArt">
+        <div class="numbertext">7 / 8</div>
+        <img src="EnvironmentArt/7.png" style="width:100%">
     </div>
 
-    <div class="PbrAssetSlides">
-        <div class="numbertext">8 / 9</div>
-        <img src="PbrAssets/temple3.png" style="width:100%">
-    </div>
-
-    <div class="PbrAssetSlides">
-        <div class="numbertext">9 / 9</div>
-        <img src="PbrAssets/untitled.png" style="width:100%">
+    <div class="EnvironmentArt">
+        <div class="numbertext">8 / 8</div>
+        <img src="EnvironmentArt/8.png" style="width:100%">
     </div>
       
-    <a class="prev" onclick="plusPBRSlides(-1)">❮</a>
-    <a class="next" onclick="plusPBRSlides(1)">❯</a>
+    <a class="prev" onclick="plusEnvironmentSlides(-1)">❮</a>
+    <a class="next" onclick="plusEnvironmentSlides(1)">❯</a>
   
     <div class="caption-container">
       <p id="caption"></p>
@@ -288,1094 +238,54 @@ h1 {
   
     <div class="row">
       <div class="column">
-        <img class="pbrdemo cursor" src="PbrAssets/balls.png" style="width:100%" onclick="currentPBRSlide(1)" alt="Fire Ball">
+        <img class="environmentart cursor" src="EnvironmentArt/1.png" style="width:100%" onclick="currentEnvironmentArtSlide(1)" alt="Fire Ball">
       </div>
       <div class="column">
-        <img class="pbrdemo cursor" src="PbrAssets/brick_ball_text.png" style="width:100%" onclick="currentPBRSlide(2)" alt="Brick wall material">
+        <img class="environmentart cursor" src="EnvironmentArt/2.png" style="width:100%" onclick="currentEnvironmentArtSlide(2)" alt="Brick wall material">
       </div>
       <div class="column">
-        <img class="pbrdemo cursor" src="PbrAssets/cgi_plane.png" style="width:100%" onclick="currentPBRSlide(3)" alt="CGI plane (Using compositor)">
+        <img class="environmentart cursor" src="EnvironmentArt/3.png" style="width:100%" onclick="currentEnvironmentArtSlide(3)" alt="CGI plane (Using compositor)">
       </div>
       <div class="column">
-        <img class="pbrdemo cursor" src="PbrAssets/chess_wallpaper.png" style="width:100%" onclick="currentPBRSlide(4)" alt="Chess scene">
+        <img class="environmentart cursor" src="EnvironmentArt/4.png" style="width:100%" onclick="currentEnvironmentArtSlide(4)" alt="Chess scene">
       </div>
       <div class="column">
-        <img class="pbrdemo cursor" src="PbrAssets/fireball.png" style="width:100%" onclick="currentPBRSlide(5)" alt="Fire ball material setup">
+        <img class="environmentart cursor" src="EnvironmentArt/5.png" style="width:100%" onclick="currentEnvironmentArtSlide(5)" alt="Fire ball material setup">
       </div>    
       <div class="column">
-        <img class="pbrdemo cursor" src="PbrAssets/temple.png" style="width:100%" onclick="currentPBRSlide(6)" alt="Basic church scene">
+        <img class="environmentart cursor" src="EnvironmentArt/6.png" style="width:100%" onclick="currentEnvironmentArtSlide(6)" alt="Basic church scene">
       </div>
       <div class="column">
-        <img class="pbrdemo cursor" src="PbrAssets/temple2.png" style="width:100%" onclick="currentPBRSlide(7)" alt="Church scene (Different angle)">
+        <img class="environmentart cursor" src="EnvironmentArt/7.png" style="width:100%" onclick="currentEnvironmentArtSlide(7)" alt="Church scene (Different angle)">
       </div>
       <div class="column">
-        <img class="pbrdemo cursor" src="PbrAssets/temple3.png" style="width:100%" onclick="currentPBRSlide(8)" alt="Church scene2 (Different angle)">
-      </div>
-      <div class="column">
-        <img class="pbrdemo cursor" src="PbrAssets/untitled.png" style="width:100%" onclick="currentPBRSlide(9)" alt="Modelling basic environment">
+        <img class="environmentart cursor" src="EnvironmentArt/8.png" style="width:100%" onclick="currentEnvironmentArtSlide(8)" alt="Church scene2 (Different angle)">
       </div>
     </div>
 </div>
 
-<!-- End :  PBR Assets -->
-
-
-<!-- Start :  Castle Assets -->
-
-<div class="container2">
-    <div class="CastleAssetSlides">
-      <div class="numbertext">1 / 17</div>
-      <img src="CastleAssets/1.png" style="width:100%">
-    </div>
-  
-    <div class="CastleAssetSlides">
-      <div class="numbertext">2 / 17</div>
-      <img src="CastleAssets/2.png" style="width:100%">
-    </div>
-  
-    <div class="CastleAssetSlides">
-      <div class="numbertext">3 / 17</div>
-      <img src="CastleAssets/3.png" style="width:100%">
-    </div>
-      
-    <div class="CastleAssetSlides">
-      <div class="numbertext">4 / 17</div>
-      <img src="CastleAssets/4.png" style="width:100%">
-    </div>
-  
-    <div class="CastleAssetSlides">
-      <div class="numbertext">5 / 17</div>
-      <img src="CastleAssets/5.png" style="width:100%">
-    </div>
-      
-    <div class="CastleAssetSlides">
-      <div class="numbertext">6 / 17</div>
-      <img src="CastleAssets/6.png" style="width:100%">
-    </div>
-
-    <div class="CastleAssetSlides">
-        <div class="numbertext">7 / 17</div>
-        <img src="CastleAssets/7.png" style="width:100%">
-    </div>
-
-    <div class="CastleAssetSlides">
-        <div class="numbertext">8 / 17</div>
-        <img src="CastleAssets/8.png" style="width:100%">
-    </div>
-
-    <div class="CastleAssetSlides">
-        <div class="numbertext">9 / 17</div>
-        <img src="CastleAssets/9.png" style="width:100%">
-    </div>
-
-    <div class="CastleAssetSlides">
-        <div class="numbertext">10 / 17</div>
-        <img src="CastleAssets/10.png" style="width:100%">
-    </div>
-
-    <div class="CastleAssetSlides">
-        <div class="numbertext">11 / 17</div>
-        <img src="CastleAssets/11.png" style="width:100%">
-    </div>
-  
-      <div class="CastleAssetSlides">
-        <div class="numbertext">12 / 17</div>
-        <img src="CastleAssets/34.png" style="width:100%">
-    </div>
-  
-        <div class="CastleAssetSlides">
-        <div class="numbertext">13 / 17</div>
-        <img src="CastleAssets/35.png" style="width:100%">
-    </div>
-  
-
-    <div class="CastleAssetSlides">
-        <div class="numbertext">14 / 17</div>
-        <img src="CastleAssets/12.png" style="width:100%">
-    </div>
-
-    <div class="CastleAssetSlides">
-        <div class="numbertext">15 / 17</div>
-        <img src="CastleAssets/13.png" style="width:100%">
-    </div>
-
-    <div class="CastleAssetSlides">
-        <div class="numbertext">16/ 17</div>
-        <img src="CastleAssets/14.png" style="width:100%">
-    </div>
-      
-    <div class="CastleAssetSlides">
-        <div class="numbertext">17/ 17</div>
-        <img src="CastleAssets/15.png" style="width:100%">
-    </div>
-      
-      
-    <a class="prev" onclick="plusCastleSlides(-1)">❮</a>
-    <a class="next" onclick="plusCastleSlides(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="castlecaption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/1.png" style="width:100%" onclick="currentCastleSlide(1)" alt="Individual castle parts">
-      </div>
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/2.png" style="width:100%" onclick="currentCastleSlide(2)" alt="Modelling castle base">
-      </div>
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/3.png" style="width:100%" onclick="currentCastleSlide(3)" alt="Adding window border material">
-      </div>
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/4.png" style="width:100%" onclick="currentCastleSlide(4)" alt="Adding support pillar">
-      </div>
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/5.png" style="width:100%" onclick="currentCastleSlide(5)" alt="Adding roof">
-      </div>    
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/6.png" style="width:100%" onclick="currentCastleSlide(6)" alt="Adding roof windows">
-      </div>
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/7.png" style="width:100%" onclick="currentCastleSlide(7)" alt="Different view shot">
-      </div>
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/8.png" style="width:100%" onclick="currentCastleSlide(8)" alt="Adding outside window frame">
-      </div>
-      
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/9.png" style="width:100%" onclick="currentCastleSlide(9)" alt="Adding terrain and it's material">
-      </div>
-
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/10.png" style="width:100%" onclick="currentCastleSlide(10)" alt="Adding water plane">
-      </div>
-
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/11.png" style="width:100%" onclick="currentCastleSlide(11)" alt="Adding grass particle system">
-      </div>
-      
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/34.png" style="width:100%" onclick="currentCastleSlide(12)" alt="Adding weight layers for particle system">
-      </div>
-
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/35.png" style="width:100%" onclick="currentCastleSlide(13)" alt="Adding grass particle system">
-      </div>
-
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/12.png" style="width:100%" onclick="currentCastleSlide(14)" alt="Improving grass material">
-      </div>
-
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/13.png" style="width:100%" onclick="currentCastleSlide(15)" alt="Adding trees and nature assets">
-      </div>
-
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/14.png" style="width:100%" onclick="currentCastleSlide(16)" alt="Adding nature plants">
-      </div>
-
-      <div class="column">
-        <img class="castledemo cursor" src="CastleAssets/15.png" style="width:100%" onclick="currentCastleSlide(17)" alt="Final scene render">
-      </div>
-    </div>
-</div>
-
-<!-- End :  Castle Assets -->
-
-<!-- Start :  Natural Assets -->
-
-<div class="container3">
-    <div class="NatureAssetSlides">
-      <div class="numbertext">1 / 16</div>
-      <img src="NaturalAssets/1.png" style="width:100%">
-    </div>
-  
-    <div class="NatureAssetSlides">
-      <div class="numbertext">2 / 16</div>
-      <img src="NaturalAssets/2.png" style="width:100%">
-    </div>
-  
-    <div class="NatureAssetSlides">
-      <div class="numbertext">3 / 16</div>
-      <img src="NaturalAssets/3.png" style="width:100%">
-    </div>
-      
-    <div class="NatureAssetSlides">
-      <div class="numbertext">4 / 16</div>
-      <img src="NaturalAssets/4.png" style="width:100%">
-    </div>
-  
-    <div class="NatureAssetSlides">
-      <div class="numbertext">5 / 16</div>
-      <img src="NaturalAssets/5.png" style="width:100%">
-    </div>
-      
-    <div class="NatureAssetSlides">
-      <div class="numbertext">6 / 16</div>
-      <img src="NaturalAssets/6.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">7 / 16</div>
-        <img src="NaturalAssets/7.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">8 / 16</div>
-        <img src="NaturalAssets/8.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">9 / 16</div>
-        <img src="NaturalAssets/9.1.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">10 / 16</div>
-        <img src="NaturalAssets/9.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">11 / 16</div>
-        <img src="NaturalAssets/10.1.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">12 / 16</div>
-        <img src="NaturalAssets/10.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">13 / 16</div>
-        <img src="NaturalAssets/11.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">14 / 16</div>
-        <img src="NaturalAssets/12.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">15 / 16</div>
-        <img src="NaturalAssets/13.png" style="width:100%">
-    </div>
-
-    <div class="NatureAssetSlides">
-        <div class="numbertext">16 / 16</div>
-        <img src="NaturalAssets/14.png" style="width:100%">
-    </div>
-      
-    <a class="prev" onclick="plusNaturalSlides(-1)">❮</a>
-    <a class="next" onclick="plusNaturalSlides(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="naturecaption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/1.png" style="width:100%" onclick="currentNaturalSlide(1)" alt="Modelling grass variation">
-      </div>
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/2.png" style="width:100%" onclick="currentNaturalSlide(2)" alt="Different camera view for grass">
-      </div>
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/3.png" style="width:100%" onclick="currentNaturalSlide(3)" alt="Modelling green leaves with branches">
-      </div>
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/4.png" style="width:100%" onclick="currentNaturalSlide(4)" alt="Modelling Ivy climbers">
-      </div>
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/5.png" style="width:100%" onclick="currentNaturalSlide(5)" alt="Modelling mapple leaves">
-      </div>    
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/6.png" style="width:100%" onclick="currentNaturalSlide(6)" alt="Modelling nettle plant">
-      </div>
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/7.png" style="width:100%" onclick="currentNaturalSlide(7)" alt="Modelling reed grass">
-      </div>
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/8.png" style="width:100%" onclick="currentNaturalSlide(8)" alt="Modelling celandine plant">
-      </div>
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/9.1.png" style="width:100%" onclick="currentNaturalSlide(9)" alt="Modelling small plant">
-      </div>
-
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/9.png" style="width:100%" onclick="currentNaturalSlide(10)" alt="Modelling tree base using blender sapling tool">
-      </div>
-
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/10.1.png" style="width:100%" onclick="currentNaturalSlide(11)" alt="Mapple tree leaf shot">
-      </div>
-
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/10.png" style="width:100%" onclick="currentNaturalSlide(12)" alt="Modelling old house">
-      </div>
-
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/11.png" style="width:100%" onclick="currentNaturalSlide(13)" alt="Bringing scene assets together">
-      </div>
-
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/12.png" style="width:100%" onclick="currentNaturalSlide(14)" alt="Final scene render">
-      </div>
-
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/13.png" style="width:100%" onclick="currentNaturalSlide(15)" alt="Upper view shot">
-      </div>
-      
-      <div class="column">
-        <img class="naturedemo cursor" src="NaturalAssets/14.png" style="width:100%" onclick="currentNaturalSlide(16)" alt="Different camera angle shot">
-      </div>
-    </div>
-</div>
-
-<!-- End :  Natural Assets -->
-
-<!-- Start :  Disney renders -->
-
-<div class="container4">
-    <div class="DisneyAssetSlides">
-      <div class="numbertext">1 / 9</div>
-      <img src="Disneyland/1.png" style="width:100%">
-    </div>
-  
-    <div class="DisneyAssetSlides">
-      <div class="numbertext">2 / 9</div>
-      <img src="Disneyland/2.png" style="width:100%">
-    </div>
-  
-    <div class="DisneyAssetSlides">
-      <div class="numbertext">3 / 9</div>
-      <img src="Disneyland/3.0.png" style="width:100%">
-    </div>
-      
-    <div class="DisneyAssetSlides">
-      <div class="numbertext">4 / 9</div>
-      <img src="Disneyland/3.1.png" style="width:100%">
-    </div>
-  
-    <div class="DisneyAssetSlides">
-      <div class="numbertext">5 / 9</div>
-      <img src="Disneyland/4.png" style="width:100%">
-    </div>
-      
-    <div class="DisneyAssetSlides">
-      <div class="numbertext">6 / 9</div>
-      <img src="Disneyland/5.png" style="width:100%">
-    </div>
-
-    <div class="DisneyAssetSlides">
-        <div class="numbertext">7 / 9</div>
-        <img src="Disneyland/6.png" style="width:100%">
-    </div>
-
-    <div class="DisneyAssetSlides">
-        <div class="numbertext">8 / 9</div>
-        <img src="Disneyland/7.png" style="width:100%">
-    </div>
-
-    <div class="DisneyAssetSlides">
-      <div class="numbertext">9 / 9</div>
-      <img src="Disneyland/8.png" style="width:100%">
-  </div>
-
-  
-    <a class="prev" onclick="plusDisneySlides(-1)">❮</a>
-    <a class="next" onclick="plusDisneySlides(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="disneycaption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="disneydemo cursor" src="Disneyland/1.png" style="width:100%" onclick="currentDisneySlide(1)" alt="3D Layout of the scene">
-      </div>
-      <div class="column">
-        <img class="disneydemo cursor" src="Disneyland/2.png" style="width:100%" onclick="currentDisneySlide(2)" alt="Tree close up shot">
-      </div>
-      <div class="column">
-        <img class="disneydemo cursor" src="Disneyland/3.0.png" style="width:100%" onclick="currentDisneySlide(3)" alt="Bringing together scene assets">
-      </div>
-      <div class="column">
-        <img class="disneydemo cursor" src="Disneyland/3.1.png" style="width:100%" onclick="currentDisneySlide(4)" alt="Adjusting camera view">
-      </div>
-      <div class="column">
-        <img class="disneydemo cursor" src="Disneyland/4.png" style="width:100%" onclick="currentDisneySlide(5)" alt="Adfding fog layer">
-      </div>    
-      <div class="column">
-        <img class="disneydemo cursor" src="Disneyland/5.png" style="width:100%" onclick="currentDisneySlide(6)" alt="Improving scene light and fog layer">
-      </div>
-      <div class="column">
-        <img class="disneydemo cursor" src="Disneyland/6.png" style="width:100%" onclick="currentDisneySlide(7)" alt="Adding path material and displacement">
-      </div>
-      <div class="column">
-        <img class="disneydemo cursor" src="Disneyland/7.png" style="width:100%" onclick="currentDisneySlide(8)" alt="Scattering rocks on path">
-      </div>
-      <div class="column">
-        <img class="disneydemo cursor" src="Disneyland/8.png" style="width:100%" onclick="currentDisneySlide(9)" alt="Final render">
-      </div>
-    </div>
-</div>
-
-<!-- End :  Disney renders -->
-  <!-- start : Hill sunset-->
-  
-   <div class="container5">
-    <div class="HillsunsetAssetSlides">
-      <div class="numbertext">1 / 12</div>
-      <img src="Hillsunset/1.png" style="width:100%">
-    </div>
-  
-    <div class="HillsunsetAssetSlides">
-      <div class="numbertext">2 / 12</div>
-      <img src="Hillsunset/2.png" style="width:100%">
-    </div>
-  
-    <div class="HillsunsetAssetSlides">
-      <div class="numbertext">3 / 12</div>
-      <img src="Hillsunset/3.png" style="width:100%">
-    </div>
-      
-    <div class="HillsunsetAssetSlides">
-      <div class="numbertext">4 / 12</div>
-      <img src="Hillsunset/4.png" style="width:100%">
-    </div>
-  
-    <div class="HillsunsetAssetSlides">
-      <div class="numbertext">5 / 12</div>
-      <img src="Hillsunset/5.png" style="width:100%">
-    </div>
-      
-    <div class="HillsunsetAssetSlides">
-      <div class="numbertext">6 / 12</div>
-      <img src="Hillsunset/6.png" style="width:100%">
-    </div>
-
-    <div class="HillsunsetAssetSlides">
-        <div class="numbertext">7 / 12</div>
-        <img src="Hillsunset/7.png" style="width:100%">
-    </div>
-
-    <div class="HillsunsetAssetSlides">
-        <div class="numbertext">8 / 12</div>
-        <img src="Hillsunset/8.png" style="width:100%">
-    </div>
-
-    <div class="HillsunsetAssetSlides">
-        <div class="numbertext">9 / 12</div>
-        <img src="Hillsunset/9.png" style="width:100%">
-    </div>
-     
-       <div class="HillsunsetAssetSlides">
-        <div class="numbertext">10 / 12</div>
-        <img src="Hillsunset/10.png" style="width:100%">
-    </div>
-     
-       <div class="HillsunsetAssetSlides">
-        <div class="numbertext">11/ 12</div>
-        <img src="Hillsunset/11.png" style="width:100%">
-    </div>
-     
-          <div class="HillsunsetAssetSlides">
-        <div class="numbertext">12/ 12</div>
-        <img src="Hillsunset/12.png" style="width:100%">
-    </div>
-
-   
-      
-    <a class="prev" onclick="plushillsunsetSlides(-1)">❮</a>
-    <a class="next" onclick="plushillsunsetSlides(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="Hillsunsetcaption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/1.png" style="width:100%" onclick="currentHillsunsetSlide(1)" alt="Building Terrrain 1">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/2.png" style="width:100%" onclick="currentHillsunsetSlide(2)" alt="Building Terrrain 2">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/3.png" style="width:100%" onclick="currentHillsunsetSlide(3)" alt="Building Terrrain 3">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/4.png" style="width:100%" onclick="currentHillsunsetSlide(4)" alt="Layout of entire scene">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/5.png" style="width:100%" onclick="currentHillsunsetSlide(5)" alt="Material preview of terrain">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/6.png" style="width:100%" onclick="currentHillsunsetSlide(6)" alt="Adding Grass System">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/7.png" style="width:100%" onclick="currentHillsunsetSlide(7)" alt="Adding Back Terrain">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/8.png" style="width:100%" onclick="currentHillsunsetSlide(8)" alt="Adding Fog Layer">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/9.png" style="width:100%" onclick="currentHillsunsetSlide(9)" alt="Close Up Shot of Terrain">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/10.png" style="width:100%" onclick="currentHillsunsetSlide(10)" alt="Adding Hills and photoscan castles">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/11.png" style="width:100%" onclick="currentHillsunsetSlide(11)" alt="Adding Nature Assets">
-      </div>
-      <div class="column">
-        <img class="Hillsunsetdemo cursor" src="Hillsunset/12.png" style="width:100%" onclick="currentHillsunsetSlide(12)" alt="Final Render">
-      </div>
-    </div>
-</div>
-
-<!-- End :  Hill sunset -->
-  <!-- Start : Ruined landscape -->
-
-<div class="container6">
-    <div class="RuinedAssetslide">
-      <div class="numbertext">1 / 10</div>
-      <img src="Ruined/0.png" style="width:100%">
-    </div>
- <div class="RuinedAssetslide">
-      <div class="numbertext">2/ 10</div>
-      <img src="Ruined/1.png" style="width:100%">
-    </div>
-  <div class="RuinedAssetslide">
-      <div class="numbertext">3/ 10</div>
-      <img src="Ruined/2.1.png" style="width:100%">
-    </div>
-  <div class="RuinedAssetslide">
-      <div class="numbertext">4 / 10</div>
-      <img src="Ruined/2.png" style="width:100%">
-    </div>
-  <div class="RuinedAssetslide">
-      <div class="numbertext">5/ 10</div>
-      <img src="Ruined/3.png" style="width:100%">
-    </div>
-  <div class="RuinedAssetslide">
-      <div class="numbertext">6 / 10</div>
-      <img src="Ruined/4.png" style="width:100%">
-    </div>
-  <div class="RuinedAssetslide">
-      <div class="numbertext">7/ 10</div>
-      <img src="Ruined/5.png" style="width:100%">
-    </div>
-  <div class="RuinedAssetslide">
-      <div class="numbertext">8/ 10</div>
-      <img src="Ruined/6.png" style="width:100%">
-    </div>
-  <div class="RuinedAssetslide">
-      <div class="numbertext">9/ 10</div>
-      <img src="Ruined/7.png" style="width:100%">
-    </div>
-  <div class="RuinedAssetslide">
-      <div class="numbertext">10 / 10</div>
-      <img src="Ruined/8.png" style="width:100%">
-    </div>
-      
-    <a class="prev" onclick="plusRuinedAssetslide(-1)">❮</a>
-    <a class="next" onclick="plusRuinedAssetslide(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="RuinedAssetscaption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/0.png" style="width:100%" onclick="currentRuinedAssetslide(1)" alt="Layout of entire scene">
-      </div>
-        <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/1.png" style="width:100%" onclick="currentRuinedAssetslide(2)" alt="Ruined Castle Block">
-      </div>
-        <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/2.1.png" style="width:100%" onclick="currentRuinedAssetslide(3)" alt="BUilding Terrain-1">
-      </div>
-        <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/2.png" style="width:100%" onclick="currentRuinedAssetslide(4)" alt="Building Terrain-2">
-      </div>
-        <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/3.png" style="width:100%" onclick="currentRuinedAssetslide(5)" alt="INcluding Fog System">
-      </div>
-        <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/4.png" style="width:100%" onclick="currentRuinedAssetslide(6)" alt="Adding Nature Assets">
-      </div>
-        <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/5.png" style="width:100%" onclick="currentRuinedAssetslide(7)" alt="IMproving Back terrain">
-      </div>
-        <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/6.png" style="width:100%" onclick="currentRuinedAssetslide(8)" alt="IMproving Scene-1">
-      </div>
-        <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/7.png" style="width:100%" onclick="currentRuinedAssetslide(9)" alt="IMproving scene-2">
-      </div>
-        <div class="column">
-        <img class="Ruineddemo cursor" src="Ruined/8.png" style="width:100%" onclick="currentRuinedAssetslide(10)" alt="Final Render">
-      </div>
-     </div>
-</div>
-
-<!-- End :  Ruined Assets -->
- <!-- start : Sunset Scene-->
-  
-<div class="container7">
-    <div class="Sunsetassetslide">
-      <div class="numbertext">1 / 9</div>
-      <img src="Sunset/11.png" style="width:100%">
-    </div>
-    <div class="Sunsetassetslide">
-      <div class="numbertext">2/ 9</div>
-      <img src="Sunset/12.png" style="width:100%">
-    </div>
-    <div class="Sunsetassetslide">
-      <div class="numbertext">3/ 9</div>
-      <img src="Sunset/3.png" style="width:100%">
-    </div>
-    <div class="Sunsetassetslide">
-      <div class="numbertext">4 / 9</div>
-      <img src="Sunset/4.png" style="width:100%">
-    </div>
-    <div class="Sunsetassetslide">
-      <div class="numbertext">5 / 9</div>
-      <img src="Sunset/5.png" style="width:100%">
-    </div>
-    <div class="Sunsetassetslide">
-      <div class="numbertext">6 / 9</div>
-      <img src="Sunset/6.png" style="width:100%">
-    </div>
-    <div class="Sunsetassetslide">
-      <div class="numbertext">7/ 9</div>
-      <img src="Sunset/7.png" style="width:100%">
-    </div>
-    <div class="Sunsetassetslide">
-      <div class="numbertext">8 / 9</div>
-      <img src="Sunset/8.png" style="width:100%">
-    </div>
-    <div class="Sunsetassetslide">
-      <div class="numbertext">9/ 9</div>
-      <img src="Sunset/9.png" style="width:100%">
-    </div>
-     
-    <a class="prev" onclick="plusSunsetassetslide(-1)">❮</a>
-    <a class="next" onclick="plusSunsetassetslide(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="Sunsetcaption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="Sunsetdemo cursor" src="Sunset/11.png" style="width:100%" onclick="currentSunsetassetslide(1)" alt="Basic Layout of the scene">
-      </div>
-       <div class="column">
-        <img class="Sunsetdemo cursor" src="Sunset/12.png" style="width:100%" onclick="currentSunsetassetslide(2)" alt="TOp View Of The Layout">
-      </div>
-         <div class="column">
-        <img class="Sunsetdemo cursor" src="Sunset/3.png" style="width:100%" onclick="currentSunsetassetslide(3)" alt="Photoscanned Castle">
-      </div>
-         <div class="column">
-        <img class="Sunsetdemo cursor" src="Sunset/4.png" style="width:100%" onclick="currentSunsetassetslide(4)" alt="Adding Shader System">
-      </div>
-         <div class="column">
-        <img class="Sunsetdemo cursor" src="Sunset/5.png" style="width:100%" onclick="currentSunsetassetslide(5)" alt="IMproving Scene LIghts">
-      </div>
-         <div class="column">
-        <img class="Sunsetdemo cursor" src="Sunset/6.png" style="width:100%" onclick="currentSunsetassetslide(6)" alt="IMproving scene Layout">
-      </div>
-         <div class="column">
-        <img class="Sunsetdemo cursor" src="Sunset/7.png" style="width:100%" onclick="currentSunsetassetslide(7)" alt="Improving Front View">
-      </div>
-         <div class="column">
-        <img class="Sunsetdemo cursor" src="Sunset/8.png" style="width:100%" onclick="currentSunsetassetslide(8)" alt="IMproving SCene Layou-2">
-      </div>
-         <div class="column">
-        <img class="Sunsetdemo cursor" src="Sunset/9.png" style="width:100%" onclick="currentSunsetassetslide(9)" alt="Final Render">
-      </div>
-    </div>
-</div>
-
-<!-- End :  sunset -->
- 
-        <!-- start : water house Scene-->
-  
-<div class="container8">
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">1 / 15</div>
-      <img src="Waterhouse/1.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">2 / 15</div>
-      <img src="Waterhouse/2.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">3 / 15</div>
-      <img src="Waterhouse/3.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">4 / 15</div>
-      <img src="Waterhouse/4.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">5/ 15</div>
-      <img src="Waterhouse/5.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">6/ 15</div>
-      <img src="Waterhouse/6.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">7/ 15</div>
-      <img src="Waterhouse/7.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">8 / 15</div>
-      <img src="Waterhouse/8.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">9/ 15</div>
-      <img src="Waterhouse/9.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">10/ 15</div>
-      <img src="Waterhouse/10.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">11/ 15</div>
-      <img src="Waterhouse/11.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">12/ 15</div>
-      <img src="Waterhouse/12.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">13/ 15</div>
-      <img src="Waterhouse/13.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">14/ 15</div>
-      <img src="Waterhouse/14.png" style="width:100%">
-    </div>
-    <div class="Waterhouseassetslide">
-      <div class="numbertext">15/ 15</div>
-      <img src="Waterhouse/15.png" style="width:100%">
-    </div>             
-      <a class="prev" onclick="plusWaterhouseassetslide(-1)">❮</a>
-      <a class="next" onclick="plusWaterhouseassetslide(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="Waterhousecaption"></p>
-    </div>
-  
-  
-  
-    <div class="row">
-      <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/1.png" style="width:100%" onclick="currentWaterhouseassetslide(1)" alt="Layout of the Scene">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/2.png" style="width:100%" onclick="currentWaterhouseassetslide(2)" alt="BAck terrain view">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/3.png" style="width:100%" onclick="currentWaterhouseassetslide(3)" alt="Adding shader system">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/4.png" style="width:100%" onclick="currentWaterhouseassetslide(4)" alt="Modellling foliage">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/5.png" style="width:100%" onclick="currentWaterhouseassetslide(5)" alt="Modelling OLd house">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/6.png" style="width:100%" onclick="currentWaterhouseassetslide(6)" alt="Material preview of the house">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/7.png" style="width:100%" onclick="currentWaterhouseassetslide(7)" alt="Material preview of the house-2">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/8.png" style="width:100%" onclick="currentWaterhouseassetslide(8)" alt="Material preview of the house-3">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/9.png" style="width:100%" onclick="currentWaterhouseassetslide(9)" alt="Improving SCene Assets">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/10.png" style="width:100%" onclick="currentWaterhouseassetslide(10)" alt="Improving scene Assets-2">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/11.png" style="width:100%" onclick="currentWaterhouseassetslide(11)" alt="Adding rocks ">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/12.png" style="width:100%" onclick="currentWaterhouseassetslide(12)" alt="Adding Shrubs">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/13.png" style="width:100%" onclick="currentWaterhouseassetslide(13)" alt="Adding Front Small Plants">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/14.png" style="width:100%" onclick="currentWaterhouseassetslide(14)" alt="IMproving Scene Layout">
-      </div>
-      
-       <div class="column">
-        <img class="Waterhousedemo cursor" src="Waterhouse/15.png" style="width:100%" onclick="currentWaterhouseassetslide(15)" alt="Final Render">
-      </div>
-    </div>
-</div>
-
-<!-- End :  Water house -->
-                
-    <!-- start : Substance painter-->
-  
-<div class="container9">
-    <div class="Substanceassetslide">
-      <div class="numbertext">1 / 15</div>
-      <img src="Substance/1.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">2/ 15</div>
-      <img src="Substance/2.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">3 / 15</div>
-      <img src="Substance/3.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">4 / 15</div>
-      <img src="Substance/4.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">5 / 15</div>
-      <img src="Substance/5.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">6/ 15</div>
-      <img src="Substance/6.png" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">7 / 15</div>
-      <img src="Substance/7.png" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">8 / 15</div>
-      <img src="Substance/8.png" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">9/ 15</div>
-      <img src="Substance/9.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">10/ 15</div>
-      <img src="Substance/10.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">11 / 15</div>
-      <img src="Substance/11.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">12 / 15</div>
-      <img src="Substance/12.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">13 / 15</div>
-      <img src="Substance/13.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">14 / 15</div>
-      <img src="Substance/14.jpg" style="width:100%">
-    </div>
-
-    <div class="Substanceassetslide">
-      <div class="numbertext">15 / 15</div>
-      <img src="Substance/15.jpg" style="width:100%">
-    </div>
-
-      <a class="prev" onclick="plusSubstanceassetslide(-1)">❮</a>
-      <a class="next" onclick="plusSubstanceassetslide(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="Substancecaption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="Substancedemo cursor" src="Substance/1.jpg" style="width:100%" onclick="currentSubstanceassetslide(1)" alt="Blood Patch">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/2.jpg" style="width:100%" onclick="currentSubstanceassetslide(2)" alt="Box 1">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/3.jpg" style="width:100%" onclick="currentSubstanceassetslide(3)" alt="Box 2">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/4.jpg" style="width:100%" onclick="currentSubstanceassetslide(4)" alt="Texturing Chair">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/5.jpg" style="width:100%" onclick="currentSubstanceassetslide(5)" alt="Coffee Cup">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/6.png" style="width:100%" onclick="currentSubstanceassetslide(6)" alt="Bringing Together THe Scene in Unity">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/7.png" style="width:100%" onclick="currentSubstanceassetslide(7)" alt="Close Up shot ">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/8.png" style="width:100%" onclick="currentSubstanceassetslide(8)" alt="Texturing Knife">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/9.jpg" style="width:100%" onclick="currentSubstanceassetslide(9)" alt="Rusted Lamp Holder">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/10.jpg" style="width:100%" onclick="currentSubstanceassetslide(10)" alt="Texturing a Paper">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/11.jpg" style="width:100%" onclick="currentSubstanceassetslide(11)" alt="Texturing Paper Bag">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/12.jpg" style="width:100%" onclick="currentSubstanceassetslide(12)" alt="Texturing A Rusted Radiator">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/13.jpg" style="width:100%" onclick="currentSubstanceassetslide(13)" alt="Texturing a chair">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/14.jpg" style="width:100%" onclick="currentSubstanceassetslide(14)" alt="Texturing shelf">
-      </div>
-      
-        <div class="column">
-        <img class="Substancedemo cursor" src="Substance/15.jpg" style="width:100%" onclick="currentSubstanceassetslide(15)" alt="Texturing Various Assets">
-      </div>
-    </div>
-</div>
-
-<!-- End :  Substance painter  -->
+<!-- End :  EnvironmentArt Assets -->
 
 <script>
 
-let pbrslideIndex = 1;
-let castleslideIndex = 1;
-let naturalslideindex = 1;
-let dinseyslideindex = 1;
-let hillsunsetslideindex = 1;
-let RuinedAssetslideindex = 1;
-let Sunsetassetslideindex = 1;
-let Waterhouseassetslideindex = 1;
-let Substanceassetslideindex = 1;
+let environmentArtSlideIndex = 1;
   
-
-showPBRSlides(pbrslideIndex);
-showCastleSlides(castleslideIndex);
-showNaturalSlides(naturalslideindex)
-showDisneySlides(dinseyslideindex)
-showHillsunsetAssetSlides(hillsunsetslideindex)
-showRuinedAssetslides(RuinedAssetslideindex)
-showSunsetassetslide(Sunsetassetslideindex)
-showWaterhouseassetslide(Waterhouseassetslideindex)
-showSubstanceassetslide(Substanceassetslideindex)
+showEnvironmentSlides(environmentArtSlideIndex);
 
 
-function plusPBRSlides(n) {
-  showPBRSlides(pbrslideIndex += n);
+function plusEnvironmentSlides(n) {
+  showEnvironmentSlides(environmentArtSlideIndex += n);
 }
-function plusCastleSlides(n) {
-  showCastleSlides(castleslideIndex += n);
-}
-function plusNaturalSlides(n) {
-  showNaturalSlides(naturalslideindex += n);
-}
-function plusDisneySlides(n) {
-  showDisneySlides(dinseyslideindex += n);
-}
-function plushillsunsetSlides(n) {
-  showHillsunsetAssetSlides(hillsunsetslideindex += n);
-}
-function plusRuinedAssetslide(n) {
-  showRuinedAssetslides(RuinedAssetslideindex += n);
-}
-function plusSunsetassetslide(n) {
-  showSunsetassetslide(Sunsetassetslideindex += n);
-}
-function plusWaterhouseassetslide(n) {
-  showWaterhouseassetslide(Waterhouseassetslideindex += n);
-}
-function plusSubstanceassetslide(n) {
-    showSubstanceassetslide(Substanceassetslideindex += n);
+
+function currentEnvironmentArtSlide(n) {
+  showEnvironmentSlides(environmentArtSlideIndex = n);
 }
 
 
-
-
-function currentPBRSlide(n) {
-  showPBRSlides(pbrslideIndex = n);
-}
-function currentCastleSlide(n) {
-  showCastleSlides(castleslideIndex = n);
-}
-function currentNaturalSlide(n) {
-  showNaturalSlides(naturalslideindex = n);
-}
-function currentDisneySlide(n) {
-  showDisneySlides(dinseyslideindex = n);
-}
-function currentHillsunsetSlide(n) {
-  showHillsunsetAssetSlides(hillsunsetslideindex = n);
-}
-function currentRuinedAssetslide(n) {
-  showRuinedAssetslides(RuinedAssetslideindex = n);
-}
-function currentSunsetassetslide(n) {
-  showSunsetassetslide(Sunsetassetslideindex = n);
-}
-function currentWaterhouseassetslide(n) {
-  showWaterhouseassetslide(Waterhouseassetslideindex = n);
-}
-function currentSubstanceassetslide(n) {
-  showSubstanceassetslide(Substanceassetslideindex = n);
-}
-
-
-function showPBRSlides(n) {
+function showEnvironmentSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("PbrAssetSlides");
-  let dots = document.getElementsByClassName("pbrdemo");
+  let slides = document.getElementsByClassName("EnvironmentArtSlides");
+  let dots = document.getElementsByClassName("environmentart");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {pbrslideIndex = 1}
   if (n < 1) {pbrslideIndex = slides.length}
@@ -1390,247 +300,21 @@ function showPBRSlides(n) {
   captionText.innerHTML = dots[pbrslideIndex-1].alt;
 }
 
-function showCastleSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("CastleAssetSlides");
-  let dots = document.getElementsByClassName("castledemo");
-  let captionText = document.getElementById("castlecaption");
-  if (n > slides.length) {castleslideIndex = 1}
-  if (n < 1) {castleslideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[castleslideIndex-1].style.display = "block";
-  dots[castleslideIndex-1].className += " active";
-  captionText.innerHTML = dots[castleslideIndex-1].alt;
-}
-
-function showNaturalSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("NatureAssetSlides");
-  let dots = document.getElementsByClassName("naturedemo");
-  let captionText = document.getElementById("naturecaption");
-  if (n > slides.length) {naturalslideindex = 1}
-  if (n < 1) {naturalslideindex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[naturalslideindex-1].style.display = "block";
-  dots[naturalslideindex-1].className += " active";
-  captionText.innerHTML = dots[naturalslideindex-1].alt;
-}
-  
-function showDisneySlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("DisneyAssetSlides");
-  let dots = document.getElementsByClassName("disneydemo");
-  let captionText = document.getElementById("disneycaption");
-  if (n > slides.length) {dinseyslideindex = 1}
-  if (n < 1) {dinseyslideindex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[dinseyslideindex-1].style.display = "block";
-  dots[dinseyslideindex-1].className += " active";
-  captionText.innerHTML = dots[dinseyslideindex-1].alt;
-}
-
-function showHillsunsetAssetSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("HillsunsetAssetSlides");
-  let dots = document.getElementsByClassName("Hillsunsetdemo");
-  let captionText = document.getElementById("Hillsunsetcaption");
-  if (n > slides.length) {hillsunsetslideindex = 1}
-  if (n < 1) {hillsunsetslideindex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[hillsunsetslideindex-1].style.display = "block";
-  dots[hillsunsetslideindex-1].className += " active";
-  captionText.innerHTML = dots[hillsunsetslideindex-1].alt;
-}
-  
-function showRuinedAssetslides(n) {
-  let i;
-  let slides = document.getElementsByClassName("RuinedAssetslide");
-  let dots = document.getElementsByClassName("Ruineddemo");
-  let captionText = document.getElementById("RuinedAssetscaption");
-  if (n > slides.length) {RuinedAssetslideindex = 1}
-  if (n < 1) {RuinedAssetslideindex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[RuinedAssetslideindex-1].style.display = "block";
-  dots[RuinedAssetslideindex-1].className += " active";
-  captionText.innerHTML = dots[RuinedAssetslideindex-1].alt;
-}
-  
-function showSunsetassetslide(n) {
-  let i;
-  let slides = document.getElementsByClassName("Sunsetassetslide");
-  let dots = document.getElementsByClassName("Sunsetdemo");
-  let captionText = document.getElementById("Sunsetcaption");
-  if (n > slides.length) {Sunsetassetslideindex = 1}
-  if (n < 1) {Sunsetassetslideindex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[Sunsetassetslideindex-1].style.display = "block";
-  dots[Sunsetassetslideindex-1].className += " active";
-  captionText.innerHTML = dots[Sunsetassetslideindex-1].alt;
-}
-
-function showWaterhouseassetslide(n) {
-  let i;
-  let slides = document.getElementsByClassName("Waterhouseassetslide");
-  let dots = document.getElementsByClassName("Waterhousedemo");
-  let captionText = document.getElementById("Waterhousecaption");
-  if (n > slides.length) {Waterhouseassetslideindex = 1}
-  if (n < 1) {Waterhouseassetslideindex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[Waterhouseassetslideindex-1].style.display = "block";
-  dots[Waterhouseassetslideindex-1].className += " active";
-  captionText.innerHTML = dots[Waterhouseassetslideindex-1].alt;
-}
-  
-function showSubstanceassetslide(n) {
-  let i;
-  let slides = document.getElementsByClassName("Substanceassetslide");
-  let dots = document.getElementsByClassName("Substancedemo");
-  let captionText = document.getElementById("Substancecaption");
-  if (n > slides.length) {Substanceassetslideindex = 1}
-  if (n < 1) {Substanceassetslideindex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[Substanceassetslideindex-1].style.display = "block";
-  dots[Substanceassetslideindex-1].className += " active";
-  captionText.innerHTML = dots[Substanceassetslideindex-1].alt;
-}
-
-
 
 filterSelection("Basics")
 function filterSelection(c) {
-  if (c == "Basics") {
-    document.getElementsByClassName("container4")[0].style.display = "none";
+  if (c == "EnvironmentArt") {
+    document.getElementsByClassName("container4")[0].style.display = "block";
     document.getElementsByClassName("container3")[0].style.display = "none";
     document.getElementsByClassName("container2")[0].style.display = "none";
-    document.getElementsByClassName("container1")[0].style.display = "block";
-    document.getElementsByClassName("container5")[0].style.display = "none";
-    document.getElementsByClassName("container6")[0].style.display = "none";
-    document.getElementsByClassName("container7")[0].style.display = "none";
-    document.getElementsByClassName("container8")[0].style.display = "none";
-    document.getElementsByClassName("container9")[0].style.display = "none";
   } else if (c == "Nature Assets") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container2")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "block";
-    document.getElementsByClassName("container4")[0].style.display = "none";
-    document.getElementsByClassName("container5")[0].style.display = "none";
-    document.getElementsByClassName("container6")[0].style.display = "none";
-    document.getElementsByClassName("container7")[0].style.display = "none";
-    document.getElementsByClassName("container8")[0].style.display = "none";
-    document.getElementsByClassName("container9")[0].style.display = "none";
   } else if (c == "Castle scene") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "none";
     document.getElementsByClassName("container2")[0].style.display = "block";
-    document.getElementsByClassName("container4")[0].style.display = "none";
-    document.getElementsByClassName("container5")[0].style.display = "none";
-    document.getElementsByClassName("container6")[0].style.display = "none";
-    document.getElementsByClassName("container7")[0].style.display = "none";
-    document.getElementsByClassName("container8")[0].style.display = "none";
-    document.getElementsByClassName("container9")[0].style.display = "none";
-  } else if (c == "Disney scene") {
-    document.getElementsByClassName("container1")[0].style.display = "none";
-    document.getElementsByClassName("container3")[0].style.display = "none";
-    document.getElementsByClassName("container2")[0].style.display = "none";
-    document.getElementsByClassName("container4")[0].style.display = "block";
-    document.getElementsByClassName("container5")[0].style.display = "none";
-    document.getElementsByClassName("container6")[0].style.display = "none";
-    document.getElementsByClassName("container7")[0].style.display = "none";
-    document.getElementsByClassName("container8")[0].style.display = "none";
-    document.getElementsByClassName("container9")[0].style.display = "none";
-  } else if (c == "Hillsunset scene") {
-    document.getElementsByClassName("container1")[0].style.display = "none";
-    document.getElementsByClassName("container3")[0].style.display = "none";
-    document.getElementsByClassName("container2")[0].style.display = "none";
-    document.getElementsByClassName("container4")[0].style.display = "none";
-    document.getElementsByClassName("container5")[0].style.display = "block";
-    document.getElementsByClassName("container6")[0].style.display = "none";
-    document.getElementsByClassName("container7")[0].style.display = "none";
-    document.getElementsByClassName("container8")[0].style.display = "none";
-    document.getElementsByClassName("container9")[0].style.display = "none";
-    
-  } else if (c == "Ruined Scene") {
-    document.getElementsByClassName("container1")[0].style.display = "none";
-    document.getElementsByClassName("container3")[0].style.display = "none";
-    document.getElementsByClassName("container2")[0].style.display = "none";
-    document.getElementsByClassName("container4")[0].style.display = "none";
-    document.getElementsByClassName("container5")[0].style.display = "none";
-    document.getElementsByClassName("container6")[0].style.display = "block";
-    document.getElementsByClassName("container7")[0].style.display = "none";
-    document.getElementsByClassName("container8")[0].style.display = "none";
-    document.getElementsByClassName("container9")[0].style.display = "none";
-  } else if (c == "Sunset scene") {
-    document.getElementsByClassName("container1")[0].style.display = "none";
-    document.getElementsByClassName("container3")[0].style.display = "none";
-    document.getElementsByClassName("container2")[0].style.display = "none";
-    document.getElementsByClassName("container4")[0].style.display = "none";
-    document.getElementsByClassName("container5")[0].style.display = "none";
-    document.getElementsByClassName("container6")[0].style.display = "none";
-    document.getElementsByClassName("container7")[0].style.display = "block";
-    document.getElementsByClassName("container8")[0].style.display = "none";
-    document.getElementsByClassName("container9")[0].style.display = "none";
-    
-  } else if (c == "Waterhouse scene") {
-    document.getElementsByClassName("container1")[0].style.display = "none";
-    document.getElementsByClassName("container3")[0].style.display = "none";
-    document.getElementsByClassName("container2")[0].style.display = "none";
-    document.getElementsByClassName("container4")[0].style.display = "none";
-    document.getElementsByClassName("container5")[0].style.display = "none";
-    document.getElementsByClassName("container6")[0].style.display = "none";
-    document.getElementsByClassName("container7")[0].style.display = "none";
-    document.getElementsByClassName("container8")[0].style.display = "block";
-    document.getElementsByClassName("container9")[0].style.display = "none";
-    
-   } else if (c == "Substance scene") {
-    document.getElementsByClassName("container1")[0].style.display = "none";
-    document.getElementsByClassName("container3")[0].style.display = "none";
-    document.getElementsByClassName("container2")[0].style.display = "none";
-    document.getElementsByClassName("container4")[0].style.display = "none";
-    document.getElementsByClassName("container5")[0].style.display = "none";
-    document.getElementsByClassName("container6")[0].style.display = "none";
-    document.getElementsByClassName("container7")[0].style.display = "none";
-    document.getElementsByClassName("container8")[0].style.display = "none";
-    document.getElementsByClassName("container9")[0].style.display = "block";
   }
 }
 
