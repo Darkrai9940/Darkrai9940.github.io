@@ -181,9 +181,9 @@ h1 {
 
 <div id="myBtnContainer" style="height:100px;">
   <!-- <button class="btn active" onclick="filterSelection('all')"> Show all</button> -->
-  <button class="btn active" onclick="filterSelection('EnvironmentArt')">Basics</button>
-  <button class="btn" onclick="filterSelection('MaterialFinal')">Nature Assets</button>
-  <button class="btn" onclick="filterSelection('Props')">Castle scene</button>
+  <button class="btn active" onclick="filterSelection('EnvironmentArt')">Environment Art</button>
+  <button class="btn" onclick="filterSelection('MaterialFinal')">Material</button>
+  <button class="btn" onclick="filterSelection('Props')">Props</button>
 </div>
  
 <!-- Start :  Environment Art -->
@@ -194,37 +194,37 @@ h1 {
       <img src="EnvironmentArt/1.png" style="width:100%">
     </div>
   
-    <div class="EnvironmentArt">
+    <div class="EnvironmentArtSlides">
       <div class="numbertext">2 / 8</div>
       <img src="EnvironmentArt/2.png" style="width:100%">
     </div>
   
-    <div class="EnvironmentArt">
+    <div class="EnvironmentArtSlides">
       <div class="numbertext">3 / 8</div>
       <img src="EnvironmentArt/3.png" style="width:100%">
     </div>
       
-    <div class="EnvironmentArt">
+    <div class="EnvironmentArtSlides">
       <div class="numbertext">4 / 8</div>
       <img src="EnvironmentArt/4.png" style="width:100%">
     </div>
   
-    <div class="EnvironmentArt">
+    <div class="EnvironmentArtSlides">
       <div class="numbertext">5 / 8</div>
       <img src="EnvironmentArt/5.png" style="width:100%">
     </div>
       
-    <div class="EnvironmentArt">
+    <div class="EnvironmentArtSlides">
       <div class="numbertext">6 / 8</div>
       <img src="EnvironmentArt/6.png" style="width:100%">
     </div>
 
-    <div class="EnvironmentArt">
+    <div class="EnvironmentArtSlides">
         <div class="numbertext">7 / 8</div>
         <img src="EnvironmentArt/7.png" style="width:100%">
     </div>
 
-    <div class="EnvironmentArt">
+    <div class="EnvironmentArtSlides">
         <div class="numbertext">8 / 8</div>
         <img src="EnvironmentArt/8.png" style="width:100%">
     </div>
@@ -304,17 +304,17 @@ function showEnvironmentSlides(n) {
 filterSelection("Basics")
 function filterSelection(c) {
   if (c == "EnvironmentArt") {
-    document.getElementsByClassName("container4")[0].style.display = "block";
-    document.getElementsByClassName("container3")[0].style.display = "none";
+    document.getElementsByClassName("container1")[0].style.display = "block";
     document.getElementsByClassName("container2")[0].style.display = "none";
+    document.getElementsByClassName("container3")[0].style.display = "none";
   } else if (c == "Nature Assets") {
     document.getElementsByClassName("container1")[0].style.display = "none";
     document.getElementsByClassName("container2")[0].style.display = "none";
     document.getElementsByClassName("container3")[0].style.display = "block";
   } else if (c == "Castle scene") {
     document.getElementsByClassName("container1")[0].style.display = "none";
-    document.getElementsByClassName("container3")[0].style.display = "none";
-    document.getElementsByClassName("container2")[0].style.display = "block";
+    document.getElementsByClassName("container2")[0].style.display = "none";
+    document.getElementsByClassName("container3")[0].style.display = "block";
   }
 }
 
