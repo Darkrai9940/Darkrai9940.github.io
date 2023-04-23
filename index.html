@@ -287,7 +287,7 @@ function showEnvironmentSlides(n) {
   let slides = document.getElementsByClassName("EnvironmentArtSlides");
   let dots = document.getElementsByClassName("environmentart");
   let captionText = document.getElementById("caption");
-  if (n > slides.length) {pbrslideIndex = 1}
+  if (n > slides.length) {environmentArtSlideIndex = 1}
   if (n < 1) {environmentArtSlideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
