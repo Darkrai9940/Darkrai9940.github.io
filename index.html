@@ -230,11 +230,11 @@ h1 {
         <img src="EnvironmentArt/8.png" style="width:100%">
     </div>
       
-    <a class="prev" onclick="plusEnvironmentSlides(-1)"></a>
-    <a class="next" onclick="plusEnvironmentSlides(1)"></a>
+    <a class="prev" onclick="plusEnvironmentSlides(-1)">❮</a>
+    <a class="next" onclick="plusEnvironmentSlides(1)">❯</a>
   
     <div class="caption-container">
-      <p id="caption"></p>
+      <p id="caption1"></p>
     </div>
   
     <div class="row">
@@ -325,11 +325,11 @@ h1 {
         <img src="MaterialFinal/11.png" style="width:100%">
     </div>
       
-    <a class="prev" onclick="plusMaterialFinalSlides(-1)"></a>
-    <a class="next" onclick="plusMaterialFinalSlides(1)"></a>
+    <a class="prev" onclick="plusMaterialFinalSlides(-1)">❮</a>
+    <a class="next" onclick="plusMaterialFinalSlides(1)">❯</a>
   
     <div class="caption-container">
-      <p id="caption"></p>
+      <p id="caption2"></p>
     </div>
   
     <div class="row">
@@ -454,11 +454,11 @@ h1 {
         <img src="Props/15.png" style="width:100%">
     </div>
       
-    <a class="prev" onclick="plusPropFinalSlides(-1)"></a>
-    <a class="next" onclick="plusPropFinalSlides(1)"></a>
+    <a class="prev" onclick="plusPropFinalSlides(-1)">❮</a>
+    <a class="next" onclick="plusPropFinalSlides(1)">❯</a>
   
     <div class="caption-container">
-      <p id="caption"></p>
+      <p id="caption3"></p>
     </div>
   
     <div class="row">
@@ -558,7 +558,7 @@ function showEnvironmentSlides(n) {
   let i;
   let slides = document.getElementsByClassName("EnvironmentArtSlides");
   let dots = document.getElementsByClassName("environmentart");
-  let captionText = document.getElementById("caption");
+  let captionText = document.getElementById("caption1");
   if (n > slides.length) {environmentArtSlideIndex = 1}
   if (n < 1) {environmentArtSlideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -576,7 +576,7 @@ function showEnvironmentSlides(n) {
   let i;
   let slides = document.getElementsByClassName("PBR Materials");
   let dots = document.getElementsByClassName("materialfinal");
-  let captionText = document.getElementById("caption");
+  let captionText = document.getElementById("caption2");
   if (n > slides.length) {materialFinalSlideIndex = 1}
   if (n < 1) {materialFinalSlideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -594,7 +594,7 @@ function showEnvironmentSlides(n) {
   let i;
   let slides = document.getElementsByClassName("Props Creation");
   let dots = document.getElementsByClassName("props");
-  let captionText = document.getElementById("caption");
+  let captionText = document.getElementById("caption3");
   if (n > slides.length) {propsSlideIndex = 1}
   if (n < 1) {propsSlideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
